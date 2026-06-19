@@ -35,7 +35,7 @@
     </div>
     <p>Answer based on how you <em>actually are</em>, not how you wish to be. The more honest you are, the more accurate your profile.</p>
   </div>
-  <button class="btn-start" onclick="startTest()">BEGIN · 25 QUESTIONS</button>
+  <button id="start-btn" type="button" class="btn-start">Begin · 25 questions</button>
 </div>
 
 <div id="quiz">
@@ -64,8 +64,8 @@
   </div>
 
   <div class="q-nav">
-    <button class="btn-back" id="btn-back" onclick="prevQ()">← BACK</button>
-    <button class="btn-next" id="btn-next" onclick="nextQ()" disabled>NEXT →</button>
+    <button type="button" class="btn-back" id="btn-back">← Back</button>
+    <button type="button" class="btn-next" id="btn-next" disabled>Next →</button>
   </div>
 </div>
 
@@ -76,7 +76,7 @@
     <p class="result-desc" id="res-desc"></p>
   </div>
   <div class="trait-cards" id="trait-cards"></div>
-  <button class="btn-restart" onclick="restart()">↺ Retake Test</button>
+  <button id="restart-btn" type="button" class="btn-restart">↺ Retake test</button>
 </div>
 </div>
 <script src="script.js"></script>
