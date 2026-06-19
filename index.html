@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Big Five Personality Test</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+<header>
+  <div class="eyebrow">Scientific Personality Assessment</div>
+  <h1>The <span>Big Five</span><br>OCEAN Model</h1>
+  <p class="subtitle">The gold standard of personality psychology · 25 Questions</p>
+  <div class="ocean-chips">
+    <span class="ocean-chip" style="color:var(--O)">O · Openness</span>
+    <span class="ocean-chip" style="color:var(--C)">C · Conscientiousness</span>
+    <span class="ocean-chip" style="color:var(--E)">E · Extraversion</span>
+    <span class="ocean-chip" style="color:var(--A)">A · Agreeableness</span>
+    <span class="ocean-chip" style="color:var(--N)">N · Neuroticism</span>
+  </div>
+</header>
+
+<!-- START -->
+<div id="start-screen">
+  <div class="start-body">
+    <p>Unlike MBTI's binary categories, the Big Five measures each trait on a <em>continuous spectrum</em> — giving you a nuanced, scientifically validated picture of your personality.</p>
+    <div class="start-grid">
+      <div class="start-cell"><span class="letter" style="color:var(--O)">O</span><span class="word">Openness</span></div>
+      <div class="start-cell"><span class="letter" style="color:var(--C)">C</span><span class="word">Conscien­tiousness</span></div>
+      <div class="start-cell"><span class="letter" style="color:var(--E)">E</span><span class="word">Extraversion</span></div>
+      <div class="start-cell"><span class="letter" style="color:var(--A)">A</span><span class="word">Agreeable­ness</span></div>
+      <div class="start-cell"><span class="letter" style="color:var(--N)">N</span><span class="word">Neuroticism</span></div>
+    </div>
+    <p>Answer based on how you <em>actually are</em>, not how you wish to be. The more honest you are, the more accurate your profile.</p>
+  </div>
+  <button class="btn-start" onclick="startTest()">BEGIN · 25 QUESTIONS</button>
+</div>
+
+<!-- QUIZ -->
+<div id="quiz">
+  <div class="progress-row">
+    <span id="q-counter">1 / 25</span>
+    <span class="trait-badge" id="trait-badge" style="color:var(--O)">OPENNESS</span>
+  </div>
+  <div class="progress-track">
+    <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-top">
+      <span class="q-num" id="q-num">01</span>
+      <span class="q-trait-tag" id="q-trait-tag" style="color:var(--O)">O</span>
+    </div>
+    <div class="q-text" id="q-text"></div>
+  </div>
+
+  <div class="likert-wrap">
+    <div class="likert-labels">
+      <span>Strongly Disagree</span>
+      <span>Strongly Agree</span>
+    </div>
+    <div class="likert-btns" id="likert-btns"></div>
+  </div>
+
+  <div class="q-nav">
+    <button class="btn-back" id="btn-back" onclick="prevQ()">← BACK</button>
+    <button class="btn-next" id="btn-next" onclick="nextQ()" disabled>NEXT →</button>
+  </div>
+</div>
+
+<!-- RESULT -->
+<div id="result">
+  <div class="result-header">
+    <div class="result-eyebrow">Your Big Five Profile</div>
+    <div class="result-headline" id="res-headline"></div>
+    <p class="result-desc" id="res-desc"></p>
+  </div>
+  <div class="trait-cards" id="trait-cards"></div>
+  <button class="btn-restart" onclick="restart()">↺ Retake Test</button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
