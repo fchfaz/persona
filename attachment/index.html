@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attachment Style Test</title>
+<meta name="description" content="Discover your attachment style — how you form bonds, handle intimacy, and respond to closeness in relationships.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ocean.css">
+<link rel="stylesheet" href="attachment.css">
+<link rel="stylesheet" href="../lang-switcher.css">
+</head>
+<body>
+<nav class="lang-switcher">
+  <a href="index.html" class="lang-btn active">EN</a>
+  <div class="lang-divider"></div>
+  <a href="id/index.html" class="lang-btn">ID</a>
+</nav>
+<div class="container">
+
+  <header>
+    <div class="eyebrow"><a href="../index.html" style="color:inherit;text-decoration:none">← All Tests</a></div>
+    <h1>Attachment <span>Theory</span></h1>
+    <p class="subtitle">The four attachment styles · Relational psychology · 28 Questions</p>
+    <div class="ocean-chips">
+      <span class="ocean-chip" style="color:var(--secure)">Secure</span>
+      <span class="ocean-chip" style="color:var(--anxious)">Anxious-Preoccupied</span>
+      <span class="ocean-chip" style="color:var(--avoidant)">Dismissive-Avoidant</span>
+      <span class="ocean-chip" style="color:var(--disorganized)">Fearful-Avoidant</span>
+    </div>
+  </header>
+
+  <div id="start-screen">
+    <div class="start-body">
+      <p>Developed from Bowlby's work and expanded by researchers Ainsworth, Bartholomew, and Horowitz, attachment theory maps how early relational experiences shape your <em>blueprint for connection</em>.</p>
+      <div class="start-grid">
+        <div class="start-cell">
+          <span class="letter" style="color:var(--secure)">S</span>
+          <span class="word">Secure</span>
+        </div>
+        <div class="start-cell">
+          <span class="letter" style="color:var(--anxious)">AP</span>
+          <span class="word">Anxious</span>
+        </div>
+        <div class="start-cell">
+          <span class="letter" style="color:var(--avoidant)">DA</span>
+          <span class="word">Avoidant</span>
+        </div>
+        <div class="start-cell">
+          <span class="letter" style="color:var(--disorganized)">FA</span>
+          <span class="word">Fearful</span>
+        </div>
+      </div>
+      <p>Answer based on how you typically feel and behave in <em>close relationships</em> — romantic, or deeply personal friendships. Be honest, not aspirational.</p>
+    </div>
+    <button id="start-btn" type="button" class="btn-start">Begin · 28 questions</button>
+  </div>
+
+  <div id="quiz">
+    <div class="progress-row">
+      <span id="q-counter">1 / 28</span>
+      <span class="trait-badge" id="trait-badge">STYLE</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-top">
+        <span class="q-num" id="q-num">01</span>
+        <span class="q-trait-tag" id="q-trait-tag">—</span>
+      </div>
+      <div class="q-text" id="q-text"></div>
+    </div>
+
+    <div class="likert-wrap">
+      <div class="likert-labels">
+        <span>Not at all like me</span>
+        <span>Exactly like me</span>
+      </div>
+      <div class="likert-btns" id="likert-btns"></div>
+    </div>
+
+    <div class="q-nav">
+      <button type="button" class="btn-back" id="btn-back">← Back</button>
+      <button type="button" class="btn-next" id="btn-next" disabled>Next →</button>
+    </div>
+  </div>
+
+  <div id="result">
+    <div class="result-header" id="res-header">
+      <div class="result-eyebrow">Your Attachment Style</div>
+      <div class="result-headline" id="res-headline"></div>
+      <p class="result-desc" id="res-desc"></p>
+    </div>
+    <div class="attach-scores" id="attach-scores"></div>
+    <div class="result-detail" id="result-detail"></div>
+    <button id="restart-btn" type="button" class="btn-restart">↺ Retake test</button>
+    <a href="../index.html" class="btn-home">← All Tests</a>
+  </div>
+
+</div>
+<script src="attachment.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Triad Personality Test</title>
+<meta name="description" content="Measure your Dark Triad traits — Narcissism, Machiavellianism, and Psychopathy — a clinical personality framework for shadow-side self-knowledge.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ocean.css">
+<link rel="stylesheet" href="dark-triad.css">
+<link rel="stylesheet" href="../lang-switcher.css">
+</head>
+<body>
+<nav class="lang-switcher">
+  <a href="index.html" class="lang-btn active">EN</a>
+  <div class="lang-divider"></div>
+  <a href="id/index.html" class="lang-btn">ID</a>
+</nav>
+<div class="container">
+
+  <header>
+    <div class="eyebrow"><a href="../index.html" style="color:inherit;text-decoration:none">← All Tests</a></div>
+    <h1>The <span>Dark Triad</span></h1>
+    <p class="subtitle">Shadow personality traits · Clinical framework · 27 Questions</p>
+    <div class="ocean-chips">
+      <span class="ocean-chip" style="color:var(--narc)">Narcissism</span>
+      <span class="ocean-chip" style="color:var(--mach)">Machiavellianism</span>
+      <span class="ocean-chip" style="color:var(--psych)">Psychopathy</span>
+    </div>
+  </header>
+
+  <div id="start-screen">
+    <div class="start-body">
+      <div class="disclaimer-box">
+        <div class="disclaimer-label">⚠ Note</div>
+        <p>This test measures subclinical traits present to varying degrees in the general population. High scores do not indicate a disorder. This is an instrument for self-knowledge, not clinical diagnosis.</p>
+      </div>
+      <p style="margin-top:24px">The Dark Triad framework, developed by Paulhus and Williams (2002), identifies three personality constructs that share a tendency toward self-promotion, callousness, and interpersonal manipulation — each with a <em>distinct psychological structure</em>.</p>
+      <div class="start-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="start-cell">
+          <span class="letter" style="color:var(--narc)">N</span>
+          <span class="word">Narcissism</span>
+        </div>
+        <div class="start-cell">
+          <span class="letter" style="color:var(--mach)">M</span>
+          <span class="word">Machiavellianism</span>
+        </div>
+        <div class="start-cell">
+          <span class="letter" style="color:var(--psych)">P</span>
+          <span class="word">Psychopathy</span>
+        </div>
+      </div>
+      <p>Answer based on what you <em>actually think</em>, not what you think you should think. Only honest answers produce meaningful insight.</p>
+    </div>
+    <button id="start-btn" type="button" class="btn-start">Begin · 27 questions</button>
+  </div>
+
+  <div id="quiz">
+    <div class="progress-row">
+      <span id="q-counter">1 / 27</span>
+      <span class="trait-badge" id="trait-badge">TRAIT</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-top">
+        <span class="q-num" id="q-num">01</span>
+        <span class="q-trait-tag" id="q-trait-tag">—</span>
+      </div>
+      <div class="q-text" id="q-text"></div>
+    </div>
+
+    <div class="likert-wrap">
+      <div class="likert-labels">
+        <span>Strongly Disagree</span>
+        <span>Strongly Agree</span>
+      </div>
+      <div class="likert-btns" id="likert-btns"></div>
+    </div>
+
+    <div class="q-nav">
+      <button type="button" class="btn-back" id="btn-back">← Back</button>
+      <button type="button" class="btn-next" id="btn-next" disabled>Next →</button>
+    </div>
+  </div>
+
+  <div id="result">
+    <div class="result-header">
+      <div class="result-eyebrow">Your Dark Triad Profile</div>
+      <div class="result-headline" id="res-headline"></div>
+      <p class="result-desc" id="res-desc"></p>
+    </div>
+    <div class="dark-scores" id="dark-scores"></div>
+    <div class="result-detail" id="result-detail"></div>
+    <button id="restart-btn" type="button" class="btn-restart">↺ Retake test</button>
+    <a href="../index.html" class="btn-home">← All Tests</a>
+  </div>
+
+</div>
+<script src="dark-triad.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tes Enneagram</title>
+<meta name="description" content="Temukan tipe Enneagrammu — model dinamis sembilan tipe kepribadian yang berakar pada motivasi dan ketakutan inti.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ocean.css">
+<link rel="stylesheet" href="../enneagram.css">
+<link rel="stylesheet" href="../../lang-switcher.css">
+</head>
+<body>
+<nav class="lang-switcher">
+  <a href="../index.html" class="lang-btn">EN</a>
+  <div class="lang-divider"></div>
+  <a href="index.html" class="lang-btn active">ID</a>
+</nav>
+<div class="container">
+
+  <header>
+    <div class="eyebrow"><a href="../../id/index.html" style="color:inherit;text-decoration:none">← Semua Tes</a></div>
+    <h1>The <span>Enneagram</span></h1>
+    <p class="subtitle">Sembilan tipe kepribadian · Motivasi & ketakutan inti · 36 Pertanyaan</p>
+    <div class="ocean-chips" id="type-chips"></div>
+  </header>
+
+  <div id="start-screen">
+    <div class="start-body">
+      <p>Enneagram ini beda dari tes kepribadian biasa. Masing-masing dari 9 tipe punya motivasi inti dan ketakutan tersembunyi yang diem-diem ngaruh banget ke cara pandang, keputusan, dan hubunganmu sama orang lain.</p>
+      <div class="enneagram-circle" id="enneagram-circle"></div>
+      <p>Jawab aja sesuai sama apa yang bener-bener kamu rasain dan pikirin ya. Tes ini bakal ngebongkar apa yang jadi dorongan terkuat di balik semua sikap dan tindakanmu.</p>
+    </div>
+    <button id="start-btn" type="button" class="btn-start">Mulai · 36 pertanyaan</button>
+  </div>
+
+  <div id="quiz">
+    <div class="progress-row">
+      <span id="q-counter">1 / 36</span>
+      <span class="trait-badge" id="trait-badge">TIPE</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-top">
+        <span class="q-num" id="q-num">01</span>
+        <span class="q-trait-tag" id="q-trait-tag">—</span>
+      </div>
+      <div class="q-text" id="q-text"></div>
+    </div>
+
+    <div class="likert-wrap">
+      <div class="likert-labels">
+        <span>Sama sekali tidak seperti saya</span>
+        <span>Persis seperti saya</span>
+      </div>
+      <div class="likert-btns" id="likert-btns"></div>
+    </div>
+
+    <div class="q-nav">
+      <button type="button" class="btn-back" id="btn-back">← Kembali</button>
+      <button type="button" class="btn-next" id="btn-next" disabled>Lanjut →</button>
+    </div>
+  </div>
+
+  <div id="result">
+    <div class="result-header">
+      <div class="result-eyebrow">Profil Enneagrammu</div>
+      <div class="result-type-badge" id="res-type-badge"></div>
+      <div class="result-headline" id="res-headline"></div>
+      <p class="result-desc" id="res-desc"></p>
+    </div>
+    <div class="enneagram-breakdown" id="enneagram-breakdown"></div>
+    <div class="result-detail" id="result-detail"></div>
+    <button id="restart-btn" type="button" class="btn-restart">↺ Ulangi tes</button>
+    <a href="../../id/index.html" class="btn-home">← Semua Tes</a>
+  </div>
+
+</div>
+<script src="../enneagram-id.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tes Kepribadian Triad Gelap</title>
+<meta name="description" content="Ukur sifat Triad Gelap-mu — Narsisisme, Machiavellianisme, dan Psikopati — kerangka klinis untuk mengenal sisi bayangan dirimu.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ocean.css">
+<link rel="stylesheet" href="../dark-triad.css">
+<link rel="stylesheet" href="../../lang-switcher.css">
+</head>
+<body>
+<nav class="lang-switcher">
+  <a href="../index.html" class="lang-btn">EN</a>
+  <div class="lang-divider"></div>
+  <a href="index.html" class="lang-btn active">ID</a>
+</nav>
+<div class="container">
+
+  <header>
+    <div class="eyebrow"><a href="../../id/index.html" style="color:inherit;text-decoration:none">← Semua Tes</a></div>
+    <h1>Dark <span>Triad</span></h1>
+    <p class="subtitle">Sifat kepribadian bayangan · Kerangka klinis · 27 Pertanyaan</p>
+    <div class="ocean-chips">
+      <span class="ocean-chip" style="color:var(--narc)">Narsisisme</span>
+      <span class="ocean-chip" style="color:var(--mach)">Machiavellianisme</span>
+      <span class="ocean-chip" style="color:var(--psych)">Psikopati</span>
+    </div>
+  </header>
+
+  <div id="start-screen">
+    <div class="start-body">
+      <div class="disclaimer-box">
+        <div class="disclaimer-label">⚠ Perhatian</div>
+        <p>Tes ini ngukur sifat-sifat "gelap" yang sebenernya ada di setiap orang dengan kadar yang beda-beda. Skor tinggi bukan berarti kamu punya gangguan jiwa ya. Tes ini murni buat bikin kamu lebih paham sama diri sendiri aja.</p>
+      </div>
+      <p style="margin-top:24px">Tes Dark Triad ngebantu kamu kenal lebih dalam sama tiga sifat kepribadian "gelap" yang sering tersembunyi. Tiga sifat ini berkaitan erat dengan cara kita memanipulasi keadaan, mencari keuntungan pribadi, dan seberapa peduli kita sama orang lain.</p>
+      <div class="start-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="start-cell">
+          <span class="letter" style="color:var(--narc)">N</span>
+          <span class="word">Narsisisme</span>
+        </div>
+        <div class="start-cell">
+          <span class="letter" style="color:var(--mach)">M</span>
+          <span class="word">Machiavellianisme</span>
+        </div>
+        <div class="start-cell">
+          <span class="letter" style="color:var(--psych)">P</span>
+          <span class="word">Psikopati</span>
+        </div>
+      </div>
+      <p>Jawab aja sejujurnya sesuai sama apa yang bener-bener kamu pikirin, bukan apa yang kelihatannya "benar" di mata orang. Nggak ada yang bakal ngehakimi hasilmu kok.</p>
+    </div>
+    <button id="start-btn" type="button" class="btn-start">Mulai · 27 pertanyaan</button>
+  </div>
+
+  <div id="quiz">
+    <div class="progress-row">
+      <span id="q-counter">1 / 27</span>
+      <span class="trait-badge" id="trait-badge">SIFAT</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-top">
+        <span class="q-num" id="q-num">01</span>
+        <span class="q-trait-tag" id="q-trait-tag">—</span>
+      </div>
+      <div class="q-text" id="q-text"></div>
+    </div>
+
+    <div class="likert-wrap">
+      <div class="likert-labels">
+        <span>Sangat Tidak Setuju</span>
+        <span>Sangat Setuju</span>
+      </div>
+      <div class="likert-btns" id="likert-btns"></div>
+    </div>
+
+    <div class="q-nav">
+      <button type="button" class="btn-back" id="btn-back">← Kembali</button>
+      <button type="button" class="btn-next" id="btn-next" disabled>Lanjut →</button>
+    </div>
+  </div>
+
+  <div id="result">
+    <div class="result-header">
+      <div class="result-eyebrow">Profil Triad Gelap-mu</div>
+      <div class="result-headline" id="res-headline"></div>
+      <p class="result-desc" id="res-desc"></p>
+    </div>
+    <div class="dark-scores" id="dark-scores"></div>
+    <div class="result-detail" id="result-detail"></div>
+    <button id="restart-btn" type="button" class="btn-restart">↺ Ulangi tes</button>
+    <a href="../../id/index.html" class="btn-home">← Semua Tes</a>
+  </div>
+
+</div>
+<script src="../dark-triad-id.js"></script>
+</body>
+</html>

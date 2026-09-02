@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tes Gaya Kelekatan</title>
+<meta name="description" content="Temukan gaya kelekatanmu — bagaimana kamu menjalin ikatan, mengelola kedekatan, dan merespons keintiman dalam hubungan.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="ocean.css">
+<link rel="stylesheet" href="../attachment.css">
+<link rel="stylesheet" href="../../lang-switcher.css">
+</head>
+<body>
+<nav class="lang-switcher">
+  <a href="../index.html" class="lang-btn">EN</a>
+  <div class="lang-divider"></div>
+  <a href="index.html" class="lang-btn active">ID</a>
+</nav>
+<div class="container">
+
+  <header>
+    <div class="eyebrow"><a href="../../id/index.html" style="color:inherit;text-decoration:none">← Semua Tes</a></div>
+    <h1>Attachment <span>Theory</span></h1>
+    <p class="subtitle">Empat gaya kelekatan · Psikologi relasional · 28 Pertanyaan</p>
+    <div class="ocean-chips">
+      <span class="ocean-chip" style="color:var(--secure)">Aman (Secure)</span>
+      <span class="ocean-chip" style="color:var(--anxious)">Cemas (Anxious)</span>
+      <span class="ocean-chip" style="color:var(--avoidant)">Menghindar (Avoidant)</span>
+      <span class="ocean-chip" style="color:var(--disorganized)">Disorganisasi (Fearful)</span>
+    </div>
+  </header>
+
+  <div id="start-screen">
+    <div class="start-body">
+      <p>Berasal dari ilmu psikologi perkembangan, tes ini ngebantu kamu memahami pola perilakumu saat menjalin hubungan, merespons keintiman, dan ngatur batasan dengan orang lain.</p>
+      <div class="start-grid">
+        <div class="start-cell">
+          <span class="letter" style="color:var(--secure)">S</span>
+          <span class="word">Aman</span>
+        </div>
+        <div class="start-cell">
+          <span class="letter" style="color:var(--anxious)">AP</span>
+          <span class="word">Cemas</span>
+        </div>
+        <div class="start-cell">
+          <span class="letter" style="color:var(--avoidant)">DA</span>
+          <span class="word">Menghindar</span>
+        </div>
+        <div class="start-cell">
+          <span class="letter" style="color:var(--disorganized)">FA</span>
+          <span class="word">Ketakutan</span>
+        </div>
+      </div>
+      <p>Isi sesuai dengan apa yang biasa kamu rasain dan lakuin dalam hubungan terdekatmu (entah itu pacar atau sahabat). Jawab sejujur-jujurnya ya, jangan milih jawaban yang cuma kedengarannya ideal.</p>
+    </div>
+    <button id="start-btn" type="button" class="btn-start">Mulai · 28 pertanyaan</button>
+  </div>
+
+  <div id="quiz">
+    <div class="progress-row">
+      <span id="q-counter">1 / 28</span>
+      <span class="trait-badge" id="trait-badge">GAYA</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+    </div>
+
+    <div class="q-card">
+      <div class="q-top">
+        <span class="q-num" id="q-num">01</span>
+        <span class="q-trait-tag" id="q-trait-tag">—</span>
+      </div>
+      <div class="q-text" id="q-text"></div>
+    </div>
+
+    <div class="likert-wrap">
+      <div class="likert-labels">
+        <span>Sama sekali tidak seperti saya</span>
+        <span>Persis seperti saya</span>
+      </div>
+      <div class="likert-btns" id="likert-btns"></div>
+    </div>
+
+    <div class="q-nav">
+      <button type="button" class="btn-back" id="btn-back">← Kembali</button>
+      <button type="button" class="btn-next" id="btn-next" disabled>Lanjut →</button>
+    </div>
+  </div>
+
+  <div id="result">
+    <div class="result-header" id="res-header">
+      <div class="result-eyebrow">Gaya Kelekatanmu</div>
+      <div class="result-headline" id="res-headline"></div>
+      <p class="result-desc" id="res-desc"></p>
+    </div>
+    <div class="attach-scores" id="attach-scores"></div>
+    <div class="result-detail" id="result-detail"></div>
+    <button id="restart-btn" type="button" class="btn-restart">↺ Ulangi tes</button>
+    <a href="../../id/index.html" class="btn-home">← Semua Tes</a>
+  </div>
+
+</div>
+<script src="../attachment-id.js"></script>
+</body>
+</html>

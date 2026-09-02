@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tes Kepribadian Big Five</title>
+<meta name="description" content="Ukur lima dimensi kepribadianmu dengan model OCEAN — standar emas psikologi kepribadian.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../ocean.css">
+<link rel="stylesheet" href="../../lang-switcher.css">
+</head>
+<body>
+<nav class="lang-switcher">
+  <a href="../index.html" class="lang-btn">EN</a>
+  <div class="lang-divider"></div>
+  <a href="index.html" class="lang-btn active">ID</a>
+</nav>
+<div class="container">
+
+<header>
+  <div class="eyebrow"><a href="../../id/index.html" style="color:inherit;text-decoration:none">← Semua Tes</a> &nbsp;·&nbsp; Penilaian Kepribadian Ilmiah</div>
+  <h1>The <span>Big Five</span><br>Model OCEAN</h1>
+  <p class="subtitle">Standar emas psikologi kepribadian · 25 Pertanyaan</p>
+  <div class="ocean-chips">
+    <span class="ocean-chip" style="color:var(--O)">O · Keterbukaan</span>
+    <span class="ocean-chip" style="color:var(--C)">C · Ketelitian</span>
+    <span class="ocean-chip" style="color:var(--E)">E · Ekstraversi</span>
+    <span class="ocean-chip" style="color:var(--A)">A · Keramahan</span>
+    <span class="ocean-chip" style="color:var(--N)">N · Neurotisisme</span>
+  </div>
+</header>
+
+<div id="start-screen">
+  <div class="start-body">
+    <p>Beda sama tes kepribadian lain yang cuma ngotak-ngotakin kamu ke dalam tipe tertentu, Big Five ngukur setiap sifatmu pake spektrum. Jadi hasilnya jauh lebih akurat, mendalam, dan pastinya diakui secara ilmiah.</p>
+    <div class="start-grid">
+      <div class="start-cell"><span class="letter" style="color:var(--O)">O</span><span class="word">Keterbukaan</span></div>
+      <div class="start-cell"><span class="letter" style="color:var(--C)">C</span><span class="word">Ketelitian</span></div>
+      <div class="start-cell"><span class="letter" style="color:var(--E)">E</span><span class="word">Ekstraversi</span></div>
+      <div class="start-cell"><span class="letter" style="color:var(--A)">A</span><span class="word">Keramahan</span></div>
+      <div class="start-cell"><span class="letter" style="color:var(--N)">N</span><span class="word">Neurotisisme</span></div>
+    </div>
+    <p>Pilih jawaban yang paling sesuai sama dirimu yang sekarang ya, bukan dirimu yang kamu harepin. Makin jujur kamu jawab, makin akurat juga hasil yang bakal kamu dapet.</p>
+  </div>
+  <button id="start-btn" type="button" class="btn-start">Mulai · 25 pertanyaan</button>
+</div>
+
+<div id="quiz">
+  <div class="progress-row">
+    <span id="q-counter">1 / 25</span>
+    <span class="trait-badge" id="trait-badge" style="color:var(--O)">KETERBUKAAN</span>
+  </div>
+  <div class="progress-track">
+    <div class="progress-fill" id="progress-fill" style="width:0%"></div>
+  </div>
+
+  <div class="q-card">
+    <div class="q-top">
+      <span class="q-num" id="q-num">01</span>
+      <span class="q-trait-tag" id="q-trait-tag" style="color:var(--O)">O</span>
+    </div>
+    <div class="q-text" id="q-text"></div>
+  </div>
+
+  <div class="likert-wrap">
+    <div class="likert-labels">
+      <span>Sangat Tidak Setuju</span>
+      <span>Sangat Setuju</span>
+    </div>
+    <div class="likert-btns" id="likert-btns"></div>
+  </div>
+
+  <div class="q-nav">
+    <button type="button" class="btn-back" id="btn-back">← Kembali</button>
+    <button type="button" class="btn-next" id="btn-next" disabled>Lanjut →</button>
+  </div>
+</div>
+
+<div id="result">
+  <div class="result-header">
+    <div class="result-eyebrow">Profil Big Five Kamu</div>
+    <div class="result-headline" id="res-headline"></div>
+    <p class="result-desc" id="res-desc"></p>
+  </div>
+  <div class="trait-cards" id="trait-cards"></div>
+  <button id="restart-btn" type="button" class="btn-restart">↺ Ulangi tes</button>
+  <a href="../../id/index.html" class="btn-restart" style="display:block;text-align:center;text-decoration:none;margin-top:2px;">← Semua Tes</a>
+</div>
+</div>
+<script src="../ocean-id.js"></script>
+</body>
+</html>

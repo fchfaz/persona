@@ -1,0 +1,53 @@
+/* ── Language Switcher ─────────────────────────────────────────────── */
+.lang-switcher {
+    position: fixed;
+    top: 20px;
+    right: 24px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    border: 1px solid var(--border);
+    background: var(--card);
+    overflow: hidden;
+}
+
+.lang-btn {
+    display: block;
+    padding: 7px 12px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 9px;
+    letter-spacing: 0.15em;
+    color: var(--muted);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.18s;
+    border: none;
+    background: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.lang-btn:hover {
+    color: var(--ink);
+    background: var(--surface);
+}
+
+.lang-btn.active {
+    background: var(--ink);
+    color: var(--bg);
+}
+
+.lang-divider {
+    width: 1px;
+    height: 20px;
+    background: var(--border);
+    flex-shrink: 0;
+}
+
+@media (max-width: 400px) {
+    .lang-switcher {
+        top: 12px;
+        right: 12px;
+    }
+}
