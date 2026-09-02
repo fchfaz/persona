@@ -130,3 +130,12 @@
     border-color: var(--ink);
     color: var(--ink);
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .start-grid { grid-template-columns: 1fr; margin: 24px 0; }
+    .dark-score-card { padding: 24px 20px; grid-template-columns: 1fr; text-align: center; gap: 12px; }
+    .dark-score-card > div:nth-child(2) { display: flex; flex-direction: column; align-items: center; }
+    .dark-bar-track { width: 100%; }
+    .result-detail { padding: 24px 20px; }
+}

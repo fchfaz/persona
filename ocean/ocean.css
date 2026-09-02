@@ -447,3 +447,22 @@ h1 span {
         transform: translateY(0);
     }
 }
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    body { padding: 24px 16px 40px; }
+    h1 { font-size: clamp(2.2rem, 9vw, 3.2rem); }
+    header { margin-bottom: 32px; }
+    .start-body { padding: 24px 20px; margin: 24px 0; }
+    .start-grid { grid-template-columns: repeat(auto-fit, minmax(60px, 1fr)); }
+    .start-cell { padding: 12px 8px; }
+    .q-card { padding: 28px 24px 24px; }
+    .likert-wrap { padding: 20px 24px; }
+    .likert-btns { gap: 4px; flex-wrap: wrap; }
+    .likert-btn { font-size: 11px; padding: 12px 0; min-width: calc(20% - 4px); }
+    .q-nav { flex-direction: column; gap: 12px; }
+    .btn-back, .btn-next { width: 100%; }
+    .result-header { padding: 32px 20px; }
+    .trait-card { padding: 24px 20px; grid-template-columns: 1fr; text-align: center; gap: 12px; }
+    .trait-card > div:nth-child(2) { display: flex; flex-direction: column; align-items: center; }
+    .trait-bar-track { width: 100%; }
+}

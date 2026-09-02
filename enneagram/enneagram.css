@@ -146,3 +146,14 @@
     border-color: var(--ink);
     color: var(--ink);
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .enneagram-circle { grid-template-columns: repeat(3, 1fr); margin: 24px 0; }
+    .enn-cell { padding: 12px 6px; }
+    .enn-score-row { padding: 16px; grid-template-columns: 24px 70px 1fr 32px; gap: 8px; }
+    .enn-score-num { font-size: 1.2rem; }
+    .enn-score-label { font-size: 7.5px; }
+    .enn-pct { font-size: 8px; }
+    .result-detail { padding: 24px 20px; }
+}
